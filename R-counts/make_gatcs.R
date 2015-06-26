@@ -38,4 +38,4 @@ GATCs.temp <- rbind(GATCs.temp, pr.ma)
 
 GATCs.temp[is.na(GATCs.temp$presence.ma) == T, 6] <- 0
 GATCs <- GATCs.temp[order(GATCs.temp$ID), ]
-write.table(GATCs, "GATCs_mod.txt", quote=F, sep="\t", row.names=F, col.names=T)
+write.table(GATCs, "../annotations/GATCs.txt", quote=F, sep="\t", row.names=F, col.names=T)
